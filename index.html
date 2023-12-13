@@ -6,19 +6,23 @@
   </head>
   
   <body>
-
+<header>
   <h1> <acronym title="Fórmula 1"</acronym>F1</h1> 
+</header>
     
     <p> Esta es mi página web en la que presentaré diversos tipos de información relacionados con el mundo de la <strong>Fórmula 1</strong>.</p>
-    <h3>Índice:</h3>
+    <nav>
+      <h3>Índice:</h3>
     <a href="#introduccion">Introducción a la F1</a><br>
       <a href="#actuales">Pilotos Actuales</a><br>
     <a href="#victorias">Pilotos con más victorias en la historia</a><br>
     <a href="#campeones">Pilotos campeones mundiales de Fórmula 1</a><br>
     <a href="#logo">Logo F1</a><br>
     <a href="#enlaces">Enlaces a vídeos</a>
+    </nav>
     </br>
   </br>
+<section>
 <h3 id="introduccion">Introducción a la F1:</h3>
 <p>El Campeonato Mundial de Fórmula 1 de la <acronym title="Federación Internacional del Automóvil">FIA</acronym>, más conocido como Fórmula 1 es la principal competición de automovilismo internacional y el campeonato de deportes de motor más popular y prestigioso del mundo. La entidad que la dirige es la Federación Internacional del Automóvil. Desde septiembre del 2016, tras la adquisición de Formula One Group, la empresa estadounidense Liberty Media es la responsable de gestionar y operar el campeonato.
 
@@ -27,11 +31,12 @@
 <p>A cada carrera se le denomina <strong>Gran Premio</strong> y el torneo que las agrupa es el Campeonato Mundial de Fórmula 1. La mayoría de los circuitos de carreras donde se celebran los Grandes Premios son autódromos, aunque también se utilizan circuitos callejeros y anteriormente se utilizaron circuitos ruteros. A su vez, los automóviles utilizados son monoplazas con la última tecnología disponible, siempre limitadas por un reglamento técnico; algunas mejoras que fueron desarrolladas en la Fórmula 1 terminaron siendo utilizadas en automóviles comerciales, como el freno de disco.
 </p>
 <p>El inicio de la Fórmula 1 moderna se remonta al año <strong>1950</strong>, en el que participaron escuderías como Ferrari, Alfa Romeo y Maserati. Algunas fueron reemplazadas por otras nuevas como McLaren, Williams, Red Bull y otras que volvieron como Mercedes se han alzado varias veces con el <strong>Campeonato Mundial de Constructores</strong>. Por su parte, los pilotos deben contar con la superlicencia de la FIA para competir, que se obtiene por los resultados en otros campeonatos.</p>
-
+</section>
 <hr>
   
 
 <h3 id="actuales"> Pilotos actuales: </h3>
+<article>
 <ul>
   <li> Red Bull Racing</li>
   <ul>
@@ -84,8 +89,10 @@
     <li> 23-Alexander Albon</li>
   </ul>
 </ul>
+</article>
 <hr>
 <h3 id="victorias">Pilotos con más victorias en la historia:</h3>
+<article>
 <ol>
   <li>Lewis Hamilton (103)</li>
   <li>Michael Schumacher (91)</li>
@@ -98,8 +105,10 @@
   <li>Jackie Stewart (27)</li>
   <li>Jim Clark, Niki Lauda (25)</li>
 </ol>
+</article>
 <hr>
 <h3 id="campeones">Pilotos campeones mundiales de Fórmula 1:</h3>
+<article>
 <table border="1" style="text-align:center">
   <th>Piloto</th>
   <th>Títulos</th>
@@ -132,6 +141,7 @@
   </tr>
 </table>
 <hr>
+</article>
 <h3 id="logo">Logo F1:</h3>
 <img src="logo f1.png" alt="Este es el logo de la Fórmula 1" title="Este es el logo de la Fórmula 1">
 
@@ -148,5 +158,36 @@
   
   <h3>Info extra sobre Fórmula 1:</h3>
 <a href="secundaria.html">Información extra sobre Fórmula 1</a>
+<hr>
+<h3>Regístrate para estar atento a todas las noticias sobre el mundo del motor:</h3>
+
+<footer>
+  <form action="/action_page.php">
+			
+			<div>
+				<label for="fname">Nombre:</label>
+				<input type="text" id="fname" name="fname" placeholder="Nombre" required>
+			</div>
+			<div>
+				<label for="fape1">Apellido 1:</label>
+				<input type="text" id="fape1" name="fape1" placeholder="Apellido 1" required>
+			</div>
+			<div>
+				<label for="fape2">Apellido 2:</label>
+				<input type="text" id="fape2" name="fape2" placeholder="Apellido 2" required>
+     
+			</div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com"
+             required>
+			<div>
+				<label for="edad">Edad:</label>
+				<input type="number" id="edad" name="edad" min="0" max="99" value="18" placeholder="0">
+			</div>
+
+			<input type="submit" value="Enviar">
+      </form>
+    </footer>
 </body>
 </html>
